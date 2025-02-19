@@ -2,6 +2,10 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "Vítor Augusto",
-    "email": "playonadev@gmail.com"
+    "name": "Augusto",
+    "email": "vistinst@gmail.com"
 }
+
+###
+
+GET http://localhost:3333/invites/vitor-august-1234
