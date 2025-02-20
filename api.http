@@ -2,10 +2,15 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "Augusto",
-    "email": "vistinst@gmail.com"
+    "name": "Orivaldo Augusto",
+    "email": "novindev@gmail.com"
 }
 
 ###
 
-GET http://localhost:3333/invites/vitor-august-1234
+GET http://localhost:3333/invites/0157be9c-d808-4bd3-8da4-2c097d52982c
+
+
+###
+
+GET http://localhost:3333/subscriber/vitoraugusts1234/ranking/clicks
