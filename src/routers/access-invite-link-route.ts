@@ -25,6 +25,7 @@ export const accessInviteLinkRoute: FastifyPluginAsyncZod = async app => {
 
       const redirectUrl = new URL(env.WEB_URL)
 
+      console.log('AccessInvite Link', subscriberId)
       redirectUrl.searchParams.set('referrer', subscriberId)
 
       return reply.redirect(redirectUrl.toString(), 302)

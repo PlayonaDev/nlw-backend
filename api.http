@@ -2,15 +2,28 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "Orivaldo Augusto",
-    "email": "novindev@gmail.com"
+    "name": "Usuário cadastrado 4",
+    "email": "novousuariocad4@gmail.com",
+    "referrer": "a3da5847-56d8-4c49-aee5-434e61196cd2"
 }
 
 ###
 
-GET http://localhost:3333/invites/0157be9c-d808-4bd3-8da4-2c097d52982c
+GET http://localhost:3333/invites/c3592c46-c632-482d-8cdf-d167aa8edc42
 
 
 ###
 
-GET http://localhost:3333/subscriber/vitoraugusts1234/ranking/clicks
+GET http://localhost:3333/subscribers/64d89e06-d312-41b1-a3b5-3c756abb2e68/ranking/clicks
+
+###
+
+GET http://localhost:3333/subscribers/64d89e06-d312-41b1-a3b5-3c756abb2e68/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/64d89e06-d312-41b1-a3b5-3c756abb2e68/ranking/position
+
+###
+
+GET http://localhost:3333/ranking
