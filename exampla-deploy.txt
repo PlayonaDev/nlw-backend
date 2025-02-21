@@ -1,0 +1,37 @@
+🚀 Tutorial: Hospedando um Backend com Render, Neon e Upstash
+
+1️⃣ Configurar o Banco de Dados (PostgreSQL) no Neon
+Acesse Neon e crie uma conta.
+Crie um novo projeto e anote a DATABASE_URL fornecida.
+Opcionalmente, configure regras de acesso e conecte-se via cliente SQL para testar.
+2️⃣ Configurar o Redis no Upstash
+Acesse Upstash e crie uma conta.
+Crie um novo banco Redis e copie a UPSTASH_REDIS_URL.
+Configure os parâmetros conforme necessário (TTL, persistência etc.).
+3️⃣ Deploy do Backend no Render
+Crie um repositório no GitHub/GitLab e suba seu código Node.js.
+Acesse Render e crie um novo serviço Web.
+Conecte o repositório e selecione o runtime adequado (Node.js).
+Defina as variáveis de ambiente:
+bash
+Copiar
+Editar
+DATABASE_URL=<sua_url_do_neon>
+UPSTASH_REDIS_URL=<sua_url_do_upstash>
+PORT=3000
+Configure o comando de inicialização, por exemplo:
+bash
+Copiar
+Editar
+npm install && npm start
+Aguarde a finalização do deploy e acesse a URL gerada.
+4️⃣ Testando a Aplicação
+Use ferramentas como Postman ou cURL para testar seus endpoints.
+
+Exemplo de teste via terminal:
+
+bash
+Copiar
+Editar
+curl -X GET https://seuservico.onrender.com/health
+Agora sua API está online e pronta para uso! 🚀
